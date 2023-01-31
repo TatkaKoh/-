@@ -6,7 +6,7 @@
 Console.Clear();
 Console.WriteLine("Введите число");
 int N = int.Parse(Console.ReadLine());
-int count = 1;
+int count = 2;
 while (count < N)
 {
     if (count%2 == 0)
@@ -18,4 +18,8 @@ while (count < N)
 if (count == N)
 {
    Console.Write($"{count}"); 
+}
+if (N < 2)
+{
+   Console.Write("введите корректное число"); 
 }
